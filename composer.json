@@ -1,0 +1,17 @@
+{
+    "name": "gestion_depenses/public",
+    "description": "Application de gestion des dépenses",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdoulaye DEMBELE"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
