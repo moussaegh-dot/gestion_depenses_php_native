@@ -13,15 +13,16 @@
 
     <div class="container">
         <div class="form-box login <?= ($active === 'login') ? 'active' : '' ?>">
-                <?php if(isset($error)): ?>
-                    <p style="color"><?= $error ?></p>
-                <?php endif; ?>
+
             <form action="/login" method="POST">
                 <h1>Connexion</h1>
                 <div class="input-box">
                     <input type="email" name="email" placeholder="Email"  required>
                     <i class='bx bxs-user'></i>
                 </div>
+                <?php if(isset($error)): ?>
+                    <p style="color"><?= $error ?></p>
+                <?php endif; ?>
                 <div class="input-box">
                     <input type="password" name="password" placeholder="Password" required>
                     <i class='bx bxs-lock-alt'></i>

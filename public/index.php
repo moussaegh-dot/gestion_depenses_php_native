@@ -3,11 +3,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use App\Core\Router;
 
-$router = new Router;
+$router = new Router();
 
 //Routes publiques
-$router->get('/dasboard', 'DashboardController@index');
-$router->get('/', 'AuthController@login');
+$router->get('/', 'DashboardController@index');
+$router->get('/login', 'AuthController@login');
 $router->post('/login', 'AuthController@authenticate');
 $router->get('/register', 'AuthController@register');
 $router->post('/register', 'AuthController@store');

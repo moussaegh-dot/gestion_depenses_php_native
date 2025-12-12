@@ -71,7 +71,7 @@ class AuthController extends Controller {
         //Création utilisateur
         User::create($name, $email, $hashedPassword);
 
-        header("Location: /auth_page");
+        header("Location: /login");
         exit;
     }
 
